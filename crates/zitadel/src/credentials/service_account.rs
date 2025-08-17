@@ -90,7 +90,7 @@ impl ServiceAccount {
     /// ### Example
     ///
     /// ```no_run
-    /// use zitadel::credentials::ServiceAccount;
+    /// use zitadel_with_serde::credentials::ServiceAccount;
     /// let service_account = ServiceAccount::load_from_file("./my_json_key.json")?;
     /// println!("{:#?}", service_account);
     /// # Ok::<(), Box<dyn std::error::Error>>(())
@@ -110,7 +110,7 @@ impl ServiceAccount {
     /// ### Example
     ///
     /// ```
-    /// use zitadel::credentials::ServiceAccount;
+    /// use zitadel_with_serde::credentials::ServiceAccount;
     /// let service_account = ServiceAccount::load_from_json(r#"{"keyId": "1337", "userId": "42", "key": "foobar"}"#)?;
     /// println!("{:#?}", service_account);
     /// # Ok::<(), Box<dyn std::error::Error>>(())
@@ -151,7 +151,7 @@ impl ServiceAccount {
     /// #     "userId": "181828061098934529"
     /// # }"#;
     /// # const ZITADEL_URL: &str = "https://zitadel-libraries-l8boqa.zitadel.cloud";
-    /// use zitadel::credentials::ServiceAccount;
+    /// use zitadel_with_serde::credentials::ServiceAccount;
     /// let service_account = ServiceAccount::load_from_json(SERVICE_ACCOUNT)?;
     /// let access_token = service_account.authenticate(ZITADEL_URL).await?;
     /// println!("{}", access_token);
@@ -195,7 +195,7 @@ impl ServiceAccount {
     /// #     "userId": "181828061098934529"
     /// # }"#;
     /// # const ZITADEL_URL: &str = "https://zitadel-libraries-l8boqa.zitadel.cloud";
-    /// use zitadel::credentials::{AuthenticationOptions, ServiceAccount};
+    /// use zitadel_with_serde::credentials::{AuthenticationOptions, ServiceAccount};
     /// let service_account = ServiceAccount::load_from_json(SERVICE_ACCOUNT)?;
     /// let access_token = service_account.authenticate_with_options(ZITADEL_URL, &AuthenticationOptions {
     ///   api_access: true,
@@ -220,7 +220,7 @@ impl ServiceAccount {
     /// #     "userId": "181828061098934529"
     /// # }"#;
     /// # const ZITADEL_URL: &str = "https://zitadel-libraries-l8boqa.zitadel.cloud";
-    /// use zitadel::credentials::{AuthenticationOptions, ServiceAccount};
+    /// use zitadel_with_serde::credentials::{AuthenticationOptions, ServiceAccount};
     /// let service_account = ServiceAccount::load_from_json(SERVICE_ACCOUNT)?;
     /// let access_token = service_account.authenticate_with_options(ZITADEL_URL, &AuthenticationOptions {
     ///   scopes: vec!["profile".to_string(), "email".to_string()],

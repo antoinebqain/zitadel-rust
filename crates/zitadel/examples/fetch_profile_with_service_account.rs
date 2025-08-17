@@ -1,4 +1,4 @@
-use zitadel::{
+use zitadel_with_serde::{
     api::{clients::ClientBuilder, zitadel::auth::v1::GetMyUserRequest},
     credentials::{AuthenticationOptions, ServiceAccount},
 };

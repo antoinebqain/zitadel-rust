@@ -1,5 +1,5 @@
 use actix_web::{get, App, HttpResponse, HttpServer, Responder};
-use zitadel::actix::introspection::{IntrospectedUser, IntrospectionConfigBuilder};
+use zitadel_with_serde::actix::introspection::{IntrospectedUser, IntrospectionConfigBuilder};
 
 #[get("/unauthed")]
 async fn unauthed() -> impl Responder {

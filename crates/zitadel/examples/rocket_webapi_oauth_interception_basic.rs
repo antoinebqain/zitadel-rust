@@ -1,4 +1,4 @@
-use zitadel::rocket::introspection::{IntrospectedUser, IntrospectionConfigBuilder};
+use zitadel_with_serde::rocket::introspection::{IntrospectedUser, IntrospectionConfigBuilder};
 
 #[rocket::get("/unauthed")]
 fn unauthed() -> &'static str {

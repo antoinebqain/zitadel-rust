@@ -93,8 +93,8 @@ impl IntrospectionConfigBuilder {
     /// ```
     /// # #[tokio::main]
     /// # async fn main() -> Result<(), Box<dyn std::error::Error>>{
-    /// # use zitadel::credentials::Application;
-    /// # use zitadel::rocket::introspection::IntrospectionConfigBuilder;
+    /// # use zitadel_with_serde::credentials::Application;
+    /// # use zitadel_with_serde::rocket::introspection::IntrospectionConfigBuilder;
     /// # const APPLICATION: &str = r#"
     /// #     {
     /// #         "type": "application",
@@ -118,7 +118,7 @@ impl IntrospectionConfigBuilder {
     /// ```
     /// # #[tokio::main]
     /// # async fn main() -> Result<(), Box<dyn std::error::Error>>{
-    /// # use zitadel::rocket::introspection::IntrospectionConfigBuilder;
+    /// # use zitadel_with_serde::rocket::introspection::IntrospectionConfigBuilder;
     /// let config = IntrospectionConfigBuilder::new("https://zitadel-libraries-l8boqa.zitadel.cloud")
     ///                 .with_basic_auth(
     ///                     "194339055499018497@zitadel_rust_test",

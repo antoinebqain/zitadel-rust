@@ -1,4 +1,4 @@
-use zitadel::credentials::ServiceAccount;
+use zitadel_with_serde::credentials::ServiceAccount;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {

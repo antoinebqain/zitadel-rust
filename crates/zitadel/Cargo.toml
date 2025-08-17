@@ -1,12 +1,12 @@
 [package]
-name = "zitadel"
-description = "An implementation of ZITADEL API access and authentication in Rust."
-version = "0.0.0-development"
-edition = "2021"
+name = "zitadel-with-serde"
+description = "An implementation of ZITADEL API access and authentication in Rust. Now with serde for serialization and deserialization."
+version = "0.1.0"
 license = "MIT OR Apache-2.0"
-authors = ["Christoph Bühler <christoph@smartive.ch>"]
-repository = "https://github.com/buehler/zitadel-rust"
-keywords = ["ZITADEL", "gRPC", "clients", "authentication", "oidc"]
+authors = ["Tony Baqain <tbaqain@istaridigital.com>"]
+edition = "2021"
+repository = "https://github.com/antoinebqain/zitadel-rust"
+keywords = ["ZITADEL", "gRPC", "clients", "authentication", "oidc", "prost", "serde"]
 categories = ["authentication", "api-bindings"]
 include = [
   "src/**/*.rs",
@@ -118,9 +118,7 @@ tokio = { version = "1.37.0", optional = true, features = [
   "macros",
   "rt-multi-thread",
 ] }
-tonic = { version = "0.12.1", features = [
-  "tls",
-], optional = true }
+tonic = { version = "0.12.1", features = ["tls"], optional = true }
 rocket_okapi = { version = "0.9.0", optional = true, default-features = false }
 schemars = {version = "0.8.21", optional = true}
 tonic-types = { version = "0.12.1", optional = true }

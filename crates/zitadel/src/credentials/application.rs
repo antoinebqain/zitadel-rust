@@ -48,7 +48,7 @@ impl Application {
     /// ### Example
     ///
     /// ```no_run
-    /// use zitadel::credentials::Application;
+    /// use zitadel_with_serde::credentials::Application;
     /// let application = Application::load_from_file("./my_json_key.json")?;
     /// println!("{:#?}", application);
     /// # Ok::<(), Box<dyn std::error::Error>>(())
@@ -68,7 +68,7 @@ impl Application {
     /// ### Example
     ///
     /// ```
-    /// use zitadel::credentials::Application;
+    /// use zitadel_with_serde::credentials::Application;
     /// let application = Application::load_from_json(r#"{"keyId": "1337", "clientId": "testing", "userId": "42", "key": "foobar", "appId": "myapp"}"#)?;
     /// println!("{:#?}", application);
     /// # Ok::<(), Box<dyn std::error::Error>>(())

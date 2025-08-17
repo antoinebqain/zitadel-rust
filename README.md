@@ -1,4 +1,9 @@
-# ZITADEL for Rust &emsp; [![Crates.io](https://img.shields.io/crates/v/zitadel)](https://crates.io/crates/zitadel) [![docs.rs](https://img.shields.io/docsrs/zitadel)](https://docs.rs/zitadel/latest/zitadel/) ![Crates.io](https://img.shields.io/crates/dv/zitadel) ![Crates.io](https://img.shields.io/crates/l/zitadel)
+
+
+# ZITADEL for Rust
+
+> [!NOTE]
+> This repository is a fork of the [original ZITADEL Rust SDK](https://github.com/zitadel/zitadel-rust).
 
 This repository contains the gRPC service clients and helpers/credentials/other utilities
 for [ZITADEL](https://github.com/zitadel/zitadel).
@@ -39,6 +44,7 @@ Required tooling:
 - `protoc-gen-prost`: `cargo install protoc-gen-prost`
 - `protoc-gen-tonic`: `cargo install protoc-gen-tonic`
 - `protoc-gen-prost-crate`: `cargo install protoc-gen-prost-crate`
+- `protoc-gen-prost-serde`: `cargo install protoc-gen-prost-serde`
 
 Installing the tools is also partially available via `just install-tools`.
 #### License

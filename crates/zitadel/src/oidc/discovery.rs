@@ -2,9 +2,8 @@ use custom_error::custom_error;
 use openidconnect::{
     core::{
         CoreAuthDisplay, CoreClaimName, CoreClaimType, CoreClientAuthMethod, CoreGrantType,
-        CoreJsonWebKey, CoreJweContentEncryptionAlgorithm,
-        CoreJweKeyManagementAlgorithm, CoreResponseMode, CoreResponseType,
-        CoreSubjectIdentifierType,
+        CoreJsonWebKey, CoreJweContentEncryptionAlgorithm, CoreJweKeyManagementAlgorithm,
+        CoreResponseMode, CoreResponseType, CoreSubjectIdentifierType,
     },
     url, AdditionalProviderMetadata, IntrospectionUrl, IssuerUrl, ProviderMetadata, RevocationUrl,
 };
@@ -40,7 +39,7 @@ custom_error! {
 /// ```
 /// # #[tokio::main]
 /// # async fn main() -> Result<(), Box<dyn std::error::Error>>{
-/// use zitadel::oidc::discovery::discover;
+/// use zitadel_with_serde::oidc::discovery::discover;
 /// let authority = "https://zitadel-libraries-l8boqa.zitadel.cloud";
 /// let metadata = discover(authority).await?;
 /// println!("{:?}", metadata.token_endpoint());
@@ -50,7 +49,9 @@ custom_error! {
 pub async fn discover(authority: &str) -> Result<ZitadelProviderMetadata, DiscoveryError> {
     let issuer = IssuerUrl::new(authority.to_string())
         .map_err(|source| DiscoveryError::IssuerUrl { source })?;
-    let async_http_client = reqwest::ClientBuilder::new().redirect(reqwest::redirect::Policy::none()).build()?;
+    let async_http_client = reqwest::ClientBuilder::new()
+        .redirect(reqwest::redirect::Policy::none())
+        .build()?;
     ZitadelProviderMetadata::discover_async(issuer, &async_http_client)
         .await
         .map_err(|_| DiscoveryError::DiscoveryDocument)

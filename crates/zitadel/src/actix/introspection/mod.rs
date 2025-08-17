@@ -24,8 +24,8 @@
 //!
 //! ```no_run
 //! # use actix_web::{App, HttpServer};
-//! # use zitadel::credentials::Application;
-//! # use zitadel::actix::introspection::IntrospectionConfigBuilder;
+//! # use zitadel_with_serde::credentials::Application;
+//! # use zitadel_with_serde::actix::introspection::IntrospectionConfigBuilder;
 //! # const APPLICATION: &str = r#"
 //! #     {
 //! #         "type": "application",
@@ -59,7 +59,7 @@
 //! OAuth introspection.
 //!
 //! ```no_run
-//! # use zitadel::actix::introspection::IntrospectedUser;
+//! # use zitadel_with_serde::actix::introspection::IntrospectedUser;
 //! #[actix_web::get("/authed")]
 //! async fn authed(user: IntrospectedUser) -> impl actix_web::Responder {
 //!     format!(
@@ -73,7 +73,7 @@
 //!
 //! ```no_run
 //! use actix_web::{App, HttpServer};
-//! use zitadel::{
+//! use zitadel_with_serde::{
 //!     credentials::Application,
 //!     actix::introspection::{IntrospectedUser, IntrospectionConfigBuilder},
 //! };

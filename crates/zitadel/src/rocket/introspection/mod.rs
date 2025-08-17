@@ -22,8 +22,8 @@
 //! inject it into rocket.
 //!
 //! ```no_run
-//! # use zitadel::credentials::Application;
-//! # use zitadel::rocket::introspection::IntrospectionConfigBuilder;
+//! # use zitadel_with_serde::credentials::Application;
+//! # use zitadel_with_serde::rocket::introspection::IntrospectionConfigBuilder;
 //! # const APPLICATION: &str = r#"
 //! #     {
 //! #         "type": "application",
@@ -52,7 +52,7 @@
 //! OAuth introspection.
 //!
 //! ```no_run
-//! # use zitadel::rocket::introspection::IntrospectedUser;
+//! # use zitadel_with_serde::rocket::introspection::IntrospectedUser;
 //! #[rocket::get("/authed")]
 //! fn authed(user: &IntrospectedUser) -> String {
 //!     format!(
@@ -65,7 +65,7 @@
 //! ### Full working example with JWT Profile
 //!
 //! ```no_run
-//! use zitadel::{
+//! use zitadel_with_serde::{
 //!     credentials::Application,
 //!     rocket::introspection::{IntrospectedUser, IntrospectionConfigBuilder},
 //! };

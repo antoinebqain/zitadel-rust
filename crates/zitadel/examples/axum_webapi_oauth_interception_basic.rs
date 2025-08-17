@@ -4,7 +4,7 @@ use axum::response::IntoResponse;
 use axum::routing::get;
 use axum::Router;
 use tokio::net::TcpListener;
-use zitadel::axum::introspection::{IntrospectedUser, IntrospectionStateBuilder};
+use zitadel_with_serde::axum::introspection::{IntrospectedUser, IntrospectionStateBuilder};
 
 async fn unauthed() -> String {
     "Hello Unauthorized User".into()

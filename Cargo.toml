@@ -7,7 +7,7 @@ members = [
 
 [workspace.package]
 version = "0.1.0"
-authors = ["Christoph Bühler <christoph@smartive.ch>"]
-description = "Rust Microservices for labs gallery"
+authors = ["Tony Baqain <tbaqain@istaridigital.com>"]
+description = "Zitadel Rust SDK"
 license = "MIT OR Apache-2.0"
 edition = "2021"
