@@ -32,7 +32,7 @@ use crate::credentials::{AuthenticationOptions, ServiceAccount};
 /// ```
 /// # #[tokio::main]
 /// # async fn main() -> Result<(), Box<dyn std::error::Error>> {
-/// use zitadel::api::{
+/// use zitadel_with_serde::api::{
 ///     clients::ClientBuilder, zitadel::auth::v1::GetMyUserRequest,
 /// };
 /// # const PERSONAL_ACCESS_TOKEN: &str = "dEnGhIFs3VnqcQU5D2zRSeiarB1nwH6goIKY0J8MWZbsnWcTuu1C59lW9DgCq1y096GYdXA";
@@ -100,7 +100,7 @@ impl Interceptor for AccessTokenInterceptor {
 /// ```
 /// # #[tokio::main]
 /// # async fn main() -> Result<(), Box<dyn std::error::Error>> {
-/// use zitadel::{
+/// use zitadel_with_serde::{
 ///     api::{clients::ClientBuilder, zitadel::auth::v1::GetMyUserRequest},
 ///     credentials::{AuthenticationOptions, ServiceAccount},
 /// };

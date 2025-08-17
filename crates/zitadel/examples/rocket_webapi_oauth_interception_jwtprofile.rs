@@ -1,4 +1,4 @@
-use zitadel::{
+use zitadel_with_serde::{
     credentials::Application,
     rocket::introspection::{IntrospectedUser, IntrospectionConfigBuilder},
 };

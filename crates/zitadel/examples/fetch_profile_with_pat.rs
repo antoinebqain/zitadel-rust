@@ -1,4 +1,4 @@
-use zitadel::api::{clients::ClientBuilder, zitadel::auth::v1::GetMyUserRequest};
+use zitadel_with_serde::api::{clients::ClientBuilder, zitadel::auth::v1::GetMyUserRequest};
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {

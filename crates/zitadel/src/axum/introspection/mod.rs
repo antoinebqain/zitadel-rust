@@ -19,7 +19,7 @@
 //! # use tokio::runtime::Builder;
 //! # use std::net::SocketAddr;
 //! #
-//! # use zitadel::axum::introspection::{IntrospectionState, IntrospectionStateBuilder};
+//! # use zitadel_with_serde::axum::introspection::{IntrospectionState, IntrospectionStateBuilder};
 //! # async fn example() {
 //! #     let introspection_state_builder = IntrospectionStateBuilder::new("https://zitadel-libraries-l8boqa.zitadel.cloud")
 //! #        .with_basic_auth(
@@ -44,7 +44,7 @@
 //! #### Use the [IntrospectedUser] extractor
 //!
 //! ```no_run
-//! # use zitadel::axum::introspection::IntrospectedUser;
+//! # use zitadel_with_serde::axum::introspection::IntrospectedUser;
 //! # use axum::response::IntoResponse;
 //! #
 //! async fn authed(user: IntrospectedUser) -> impl IntoResponse {

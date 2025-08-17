@@ -14,7 +14,7 @@ use crate::oidc::introspection::AuthorityAuthentication;
 ///
 /// ```
 /// use axum::extract::FromRef;
-/// use zitadel::axum::introspection::IntrospectionState;
+/// use zitadel_with_serde::axum::introspection::IntrospectionState;
 /// struct UserState {
 ///     introspection_state: IntrospectionState
 /// }

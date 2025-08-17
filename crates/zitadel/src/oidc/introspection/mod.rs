@@ -57,8 +57,8 @@ custom_error! {
 /// It can be used as a basis for further customized authorization checks, for example:
 /// ```
 /// use std::collections::HashMap;
-/// use zitadel::axum::introspection::IntrospectedUser;
-/// use zitadel::oidc::introspection::{ZitadelIntrospectionExtraTokenFields, ZitadelIntrospectionResponse};
+/// use zitadel_with_serde::axum::introspection::IntrospectedUser;
+/// use zitadel_with_serde::oidc::introspection::{ZitadelIntrospectionExtraTokenFields, ZitadelIntrospectionResponse};
 /// use serde_json::Error as SerdeError;
 ///
 ///
@@ -240,8 +240,8 @@ fn payload(
 /// ```
 /// # #[tokio::main]
 /// # async fn main() -> Result<(), Box<dyn std::error::Error>>{
-/// # use zitadel::oidc::discovery::discover;
-/// # use zitadel::oidc::introspection::{AuthorityAuthentication, introspect};
+/// # use zitadel_with_serde::oidc::discovery::discover;
+/// # use zitadel_with_serde::oidc::introspection::{AuthorityAuthentication, introspect};
 /// let auth = AuthorityAuthentication::Basic {
 ///     client_id: "194339055499018497@zitadel_rust_test".to_string(),
 ///     client_secret: "Ip56oGzxKL1rJ8JaleUVKL7qUlpZ1tqHQYRSd6JE1mTlTJ3pDkDzoObHdZsOg88B".to_string(),

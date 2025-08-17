@@ -31,8 +31,8 @@ impl InMemoryIntrospectionCache {
     ///
     /// ```
     /// use std::time::Duration;
-    /// use zitadel::oidc::introspection::cache::in_memory::InMemoryIntrospectionCache;
-    /// use zitadel::oidc::introspection::cache::in_memory::CacheBuilder;
+    /// use zitadel_with_serde::oidc::introspection::cache::in_memory::InMemoryIntrospectionCache;
+    /// use zitadel_with_serde::oidc::introspection::cache::in_memory::CacheBuilder;
     /// let cache = InMemoryIntrospectionCache::new_from_cache(
     ///                 CacheBuilder::new(10_000)
     ///                     // use short lifetime to make sure token invalidation can be detected

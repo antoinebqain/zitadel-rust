@@ -63,7 +63,7 @@ impl IntoResponse for IntrospectionGuardError {
 /// ```
 /// use axum::http::StatusCode;
 /// use axum::response::IntoResponse;
-/// use zitadel::axum::introspection::IntrospectedUser;
+/// use zitadel_with_serde::axum::introspection::IntrospectedUser;
 ///
 /// enum Role {
 ///   Admin,
