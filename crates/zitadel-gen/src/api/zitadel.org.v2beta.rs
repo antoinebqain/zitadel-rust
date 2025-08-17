@@ -49,6 +49,6 @@ pub mod add_organization_response {
         pub phone_code: ::core::option::Option<::prost::alloc::string::String>,
     }
 }
-include!("zitadel.org.v2beta.tonic.rs");
 include!("zitadel.org.v2beta.serde.rs");
+include!("zitadel.org.v2beta.tonic.rs");
 // @@protoc_insertion_point(module)

@@ -1672,6 +1672,6 @@ impl AuthFactors {
         }
     }
 }
-include!("zitadel.user.v2.tonic.rs");
 include!("zitadel.user.v2.serde.rs");
+include!("zitadel.user.v2.tonic.rs");
 // @@protoc_insertion_point(module)

@@ -543,6 +543,6 @@ pub struct ListExecutionServicesResponse {
     #[prost(string, repeated, tag="1")]
     pub services: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
 }
-include!("zitadel.resources.action.v3alpha.tonic.rs");
 include!("zitadel.resources.action.v3alpha.serde.rs");
+include!("zitadel.resources.action.v3alpha.tonic.rs");
 // @@protoc_insertion_point(module)

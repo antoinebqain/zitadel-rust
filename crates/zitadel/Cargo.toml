@@ -4,6 +4,7 @@ description = "An implementation of ZITADEL API access and authentication in Rus
 version = "0.1.0"
 license = "MIT OR Apache-2.0"
 authors = ["Tony Baqain <tbaqain@istaridigital.com>"]
+edition = "2021"
 repository = "https://github.com/antoinebqain/zitadel-rust"
 keywords = ["ZITADEL", "gRPC", "clients", "authentication", "oidc", "prost", "serde"]
 categories = ["authentication", "api-bindings"]

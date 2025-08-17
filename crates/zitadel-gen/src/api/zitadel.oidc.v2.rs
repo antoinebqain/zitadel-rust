@@ -184,6 +184,6 @@ pub struct CreateCallbackResponse {
     #[prost(string, tag="2")]
     pub callback_url: ::prost::alloc::string::String,
 }
-include!("zitadel.oidc.v2.tonic.rs");
 include!("zitadel.oidc.v2.serde.rs");
+include!("zitadel.oidc.v2.tonic.rs");
 // @@protoc_insertion_point(module)

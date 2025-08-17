@@ -522,6 +522,6 @@ pub struct GetIdpByIdResponse {
     #[prost(message, optional, tag="1")]
     pub idp: ::core::option::Option<Idp>,
 }
-include!("zitadel.idp.v2.tonic.rs");
 include!("zitadel.idp.v2.serde.rs");
+include!("zitadel.idp.v2.tonic.rs");
 // @@protoc_insertion_point(module)

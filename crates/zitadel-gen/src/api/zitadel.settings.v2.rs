@@ -527,6 +527,6 @@ pub struct SetSecuritySettingsResponse {
     #[prost(message, optional, tag="1")]
     pub details: ::core::option::Option<super::super::object::v2::Details>,
 }
-include!("zitadel.settings.v2.tonic.rs");
 include!("zitadel.settings.v2.serde.rs");
+include!("zitadel.settings.v2.tonic.rs");
 // @@protoc_insertion_point(module)
