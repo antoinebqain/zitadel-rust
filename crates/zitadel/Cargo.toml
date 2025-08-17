@@ -1,12 +1,11 @@
 [package]
-name = "zitadel"
-description = "An implementation of ZITADEL API access and authentication in Rust."
-version = "0.0.0-development"
-edition = "2021"
+name = "zitadel-with-serde"
+description = "An implementation of ZITADEL API access and authentication in Rust. Now with serde for serialization and deserialization."
+version = "0.1.0"
 license = "MIT OR Apache-2.0"
-authors = ["Christoph Bühler <christoph@smartive.ch>"]
-repository = "https://github.com/buehler/zitadel-rust"
-keywords = ["ZITADEL", "gRPC", "clients", "authentication", "oidc"]
+authors = ["Tony Baqain <tbaqain@istaridigital.com>"]
+repository = "https://github.com/antoinebqain/zitadel-rust"
+keywords = ["ZITADEL", "gRPC", "clients", "authentication", "oidc", "prost", "serde"]
 categories = ["authentication", "api-bindings"]
 include = [
   "src/**/*.rs",

@@ -14,6 +14,10 @@ plugins:
       - compile_well_known_types
       - extern_path=.google.protobuf=::pbjson_types
       - no_server
+  - plugin: prost-serde
+    out: crates/zitadel-gen/src/api/
+    opt:
+      - extern_path=.google.protobuf=::pbjson_types
   - name: prost-crate
     out: ./crates/zitadel-gen
     strategy: all
