@@ -1,7 +1,7 @@
 [workspace]
 resolver = "2"
 members = [
-    "crates/zitadel",
+    "crates/zitadel-with-serde",
     "crates/zitadel-gen",
 ]
 
