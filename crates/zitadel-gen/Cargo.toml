@@ -2,6 +2,14 @@
 name = "zitadel-gen"
 version = "2.69.1"
 edition = "2021"
+include = [
+  "Cargo.toml",
+  "README*",
+  "LICENSE*",
+  "src/**",
+  "gen/**",              # <- your generated files (even if gitignored)
+  "build.rs",            # if you have one
+]
 
 
 [features]
