@@ -17,13 +17,13 @@ jobs:
       - uses: bufbuild/buf-setup-action@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      - uses: extractions/setup-just@v3
+      - uses: extractions/setup-just@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - uses: arduino/setup-protoc@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-      - run: cargo install protoc-gen-prost protoc-gen-prost-crate protoc-gen-tonic protoc-gen-prost-serde
+      - run: cargo install protoc-gen-prost protoc-gen-prost-crate protoc-gen-tonic
       - name: generated grpc code
         run: just
       - run: cargo clippy --all-features --no-deps

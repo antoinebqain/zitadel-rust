@@ -1,5 +1,3 @@
-
-
 # ZITADEL for Rust
 
 > [!NOTE]
@@ -9,6 +7,7 @@ This repository contains the gRPC service clients and helpers/credentials/other 
 for [ZITADEL](https://github.com/zitadel/zitadel).
 
 The following features are present:
+
 - API clients for communication with the ZITADEL API (calling gRPC methods)
 - Credentials support for the API clients (access token and service account interceptors)
 - OIDC Introspection support for [rocket](https://rocket.rs)
@@ -16,21 +15,14 @@ The following features are present:
 
 ### Example
 
-There exist a few examples in the `zitadel-examples` crate.
+There exist a few examples in the `examples` directory.
 Go there to see the library in action, or head over to the
 [documentation](https://docs.rs/zitadel/latest/zitadel/) to see the full API documentation.
-
-### Compatibility Matrix
-
-| ZITADEL Version | Rust Version | zitadel-rust Version | zitadel-gen Version |
-|-----------------|--------------|----------------------|---------------------|
-| 2.69.1          | 1.80.0+      | 5.5.2                | 2.69.1              |
 
 ### Development
 
 After you clone the repository, you need ["just"](https://just.systems) to run
-certain tasks. 
-Generating the gRPC clients is done via `just generate-grpc` or `just`
+certain tasks. Generating the gRPC clients is done via `just generate-grpc` or `just`
 (as it is configured to be the default action for just).
 
 For the generation to complete successfully, you need to have ["buf"](https://buf.build)
@@ -44,9 +36,9 @@ Required tooling:
 - `protoc-gen-prost`: `cargo install protoc-gen-prost`
 - `protoc-gen-tonic`: `cargo install protoc-gen-tonic`
 - `protoc-gen-prost-crate`: `cargo install protoc-gen-prost-crate`
-- `protoc-gen-prost-serde`: `cargo install protoc-gen-prost-serde`
 
 Installing the tools is also partially available via `just install-tools`.
+
 #### License
 
 <sup>
