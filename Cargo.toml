@@ -161,7 +161,6 @@ proto_full = ["zitadel-action-v1","zitadel-action-v2","zitadel-action-v2beta","z
 actix-web = { version = "4.5.1", optional = true }
 async-trait = { version = "0.1.80", optional = true }
 axum = { version = "0.8.0", optional = true, features = ["macros"] }
-## axum-extra = { version = "0.11.0", optional = true, features = ["typed-header"] }
 base64-compat = { version = "1", optional = true }
 custom_error = "1.9.2"
 document-features = { version = "0.2.8", optional = true }
@@ -188,7 +187,7 @@ rocket_okapi = { version = "0.9.0", optional = true, default-features = false }
 schemars = {version = "0.8.21", optional = true}
 tonic-types = { version = "0.12.1", optional = true }
 pbjson = "0.8.0"
-axum-extra = { version = "0.10.1", features = ["typed-header"] }
+axum-extra = { version = "0.10.1", features = ["typed-header"], optional = true }
 
 [dev-dependencies]
 chrono = "0.4.38"
